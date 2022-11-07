@@ -27,7 +27,7 @@ print is not defined
 function getOddEven(max = 10){
   let evenSum = 0;
   for (let i = 1; i<= max; i++) {
-    if(i % 2 !== 0) {
+    if(i % 2 === 0) {
       evenSum += i;
     }
   }
@@ -47,6 +47,7 @@ function getOddSum(max = 10){
   }
    return oddSum;
 }
+getOddEven(20);//100
 ```
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
